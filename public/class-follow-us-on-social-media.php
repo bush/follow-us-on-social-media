@@ -2,11 +2,11 @@
 /**
  * Plugin Name.
  *
- * @package   Plugin_Name
- * @author    Your Name <email@example.com>
+ * @package   Follow_Us_On_Social_Media 
+ * @author    Dave Bush <dave@nimkeesoftware.com>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2014 Your Name or Company Name
+ * @link      https://github.com/bush/follow-us-on-social-media
+ * @copyright 2014 Nimkee Software 
  */
 
 /**
@@ -46,7 +46,7 @@ class Follow_Us_On_Social_Media {
 	 *
 	 * @var      string
 	 */
-	protected $plugin_slug = 'plugin-name';
+	protected $plugin_slug = 'follow-us-on-social-media';
 
 	/**
 	 * Instance of this class.

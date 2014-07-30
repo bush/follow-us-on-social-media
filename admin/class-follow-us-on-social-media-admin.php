@@ -18,10 +18,10 @@
  *
  * @TODO: Rename this class to a proper name for your plugin.
  *
- * @package Plugin_Name_Admin
- * @author  Your Name <email@example.com>
+ * @package Follow_Us_On_Social_Media 
+ * @author  Dave Bush <dave@nimkeesoftware.com>
  */
-class Plugin_Name_Admin {
+class Class_Follow_Us_On_Social_Media_Admin {
 
 	/**
 	 * Instance of this class.

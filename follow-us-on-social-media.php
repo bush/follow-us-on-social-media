@@ -6,7 +6,7 @@
  * also follow WordPress Coding Standards and PHP best practices.
  *
  * @package   Follow_Us_On_Social_Media 
- * @author    Dave Bush <davebush@gmail.com>
+ * @author    Dave Bush <dave@nimkeesoftware.com>
  * @license   GPL-2.0+
  * @link      https://github.com/bush/follow-us-on-social-media
  * @copyright 2014 NimkeeSoftware.com
