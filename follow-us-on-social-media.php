@@ -1,15 +1,15 @@
 <?php
 /**
- * The WordPress Plugin Boilerplate.
+ * Follow Us on Social Media.
  *
  * A foundation off of which to build well-documented WordPress plugins that
  * also follow WordPress Coding Standards and PHP best practices.
  *
- * @package   Plugin_Name
- * @author    Your Name <email@example.com>
+ * @package   Follow_Us_On_Social_Media 
+ * @author    Dave Bush <davebush@gmail.com>
  * @license   GPL-2.0+
- * @link      http://example.com
- * @copyright 2014 Your Name or Company Name
+ * @link      https://github.com/bush/follow-us-on-social-media
+ * @copyright 2014 NimkeeSoftware.com
  *
  * @wordpress-plugin
  * Plugin Name:       @TODO
@@ -41,7 +41,7 @@ if ( ! defined( 'WPINC' ) ) {
  * - replace `class-plugin-name.php` with the name of the plugin's class file
  *
  */
-require_once( plugin_dir_path( __FILE__ ) . 'public/class-plugin-name.php' );
+require_once( plugin_dir_path( __FILE__ ) . 'public/class-follow-us-on-social-media.php' );
 
 /*
  * Register hooks that are fired when the plugin is activated or deactivated.
@@ -52,8 +52,8 @@ require_once( plugin_dir_path( __FILE__ ) . 'public/class-plugin-name.php' );
  * - replace Plugin_Name with the name of the class defined in
  *   `class-plugin-name.php`
  */
-register_activation_hook( __FILE__, array( 'Plugin_Name', 'activate' ) );
-register_deactivation_hook( __FILE__, array( 'Plugin_Name', 'deactivate' ) );
+register_activation_hook( __FILE__, array( 'Follow_Us_On_Social_Media', 'activate' ) );
+register_deactivation_hook( __FILE__, array( 'Follow_Us_On_Social_Media', 'deactivate' ) );
 
 /*
  * @TODO:
@@ -61,7 +61,7 @@ register_deactivation_hook( __FILE__, array( 'Plugin_Name', 'deactivate' ) );
  * - replace Plugin_Name with the name of the class defined in
  *   `class-plugin-name.php`
  */
-add_action( 'plugins_loaded', array( 'Plugin_Name', 'get_instance' ) );
+add_action( 'plugins_loaded', array( 'Follow_Us_On_Social_Media', 'get_instance' ) );
 
 /*----------------------------------------------------------------------------*
  * Dashboard and Administrative Functionality
@@ -85,7 +85,7 @@ add_action( 'plugins_loaded', array( 'Plugin_Name', 'get_instance' ) );
  */
 if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
 
-	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-plugin-name-admin.php' );
-	add_action( 'plugins_loaded', array( 'Plugin_Name_Admin', 'get_instance' ) );
+	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-follow-us-on-social-admin.php' );
+	add_action( 'plugins_loaded', array( 'Follow_Us_On_Social_Media_Admin', 'get_instance' ) );
 
 }

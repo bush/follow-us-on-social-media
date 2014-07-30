@@ -21,7 +21,7 @@
  * @package Plugin_Name
  * @author  Your Name <email@example.com>
  */
-class Plugin_Name {
+class Follow_Us_On_Social_Media {
 
 	/**
 	 * Plugin version, used for cache-busting of style and script file references.
