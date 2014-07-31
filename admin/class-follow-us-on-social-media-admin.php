@@ -2,7 +2,7 @@
 /**
  * Plugin Name.
  *
- * @package   Plugin_Name_Admin
+ * @package   Follow_Us_On_Social_Media_Admin
  * @author    Your Name <email@example.com>
  * @license   GPL-2.0+
  * @link      http://example.com
@@ -63,10 +63,10 @@ class Class_Follow_Us_On_Social_Media_Admin {
 		 *
 		 * @TODO:
 		 *
-		 * - Rename "Plugin_Name" to the name of your initial plugin class
+		 * - Rename "Follow_Us_On_Social_Media" to the name of your initial plugin class
 		 *
 		 */
-		$plugin = Plugin_Name::get_instance();
+		$plugin = Follow_Us_On_Social_Media::get_instance();
 		$this->plugin_slug = $plugin->get_plugin_slug();
 
 		// Load admin style sheet and JavaScript.
@@ -122,7 +122,7 @@ class Class_Follow_Us_On_Social_Media_Admin {
 	 *
 	 * @TODO:
 	 *
-	 * - Rename "Plugin_Name" to the name your plugin
+	 * - Rename "Follow_Us_On_Social_Media" to the name your plugin
 	 *
 	 * @since     1.0.0
 	 *
@@ -136,7 +136,7 @@ class Class_Follow_Us_On_Social_Media_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Plugin_Name::VERSION );
+			wp_enqueue_style( $this->plugin_slug .'-admin-styles', plugins_url( 'assets/css/admin.css', __FILE__ ), array(), Follow_Us_On_Social_Media::VERSION );
 		}
 
 	}
@@ -146,7 +146,7 @@ class Class_Follow_Us_On_Social_Media_Admin {
 	 *
 	 * @TODO:
 	 *
-	 * - Rename "Plugin_Name" to the name your plugin
+	 * - Rename "Follow_Us_On_Social_Media" to the name your plugin
 	 *
 	 * @since     1.0.0
 	 *
@@ -160,7 +160,7 @@ class Class_Follow_Us_On_Social_Media_Admin {
 
 		$screen = get_current_screen();
 		if ( $this->plugin_screen_hook_suffix == $screen->id ) {
-			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Plugin_Name::VERSION );
+			wp_enqueue_script( $this->plugin_slug . '-admin-script', plugins_url( 'assets/js/admin.js', __FILE__ ), array( 'jquery' ), Follow_Us_On_Social_Media::VERSION );
 		}
 
 	}

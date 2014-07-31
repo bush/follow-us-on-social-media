@@ -12,17 +12,17 @@
  * @copyright 2014 NimkeeSoftware.com
  *
  * @wordpress-plugin
- * Plugin Name:       @TODO
- * Plugin URI:        @TODO
- * Description:       @TODO
+ * Plugin Name:       Follow Us on Social Media 
+ * Plugin URI:        https://github.com/bush/follow-us-on-social-media
+ * Description:       Just Another Follow Us Plugin
  * Version:           1.0.0
- * Author:            @TODO
- * Author URI:        @TODO
- * Text Domain:       plugin-name-locale
+ * Author:            Dave Bush
+ * Author URI:        http://nimkeesoftware.com
+ * Text Domain:       follow-us-on-social-media-locale
  * License:           GPL-2.0+
  * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
  * Domain Path:       /languages
- * GitHub Plugin URI: https://github.com/<owner>/<repo>
+ * GitHub Plugin URI: https://github.com/bush/follow-us-on-social-media
  * WordPress-Plugin-Boilerplate: v2.6.1
  */
 
@@ -85,7 +85,7 @@ add_action( 'plugins_loaded', array( 'Follow_Us_On_Social_Media', 'get_instance'
  */
 if ( is_admin() && ( ! defined( 'DOING_AJAX' ) || ! DOING_AJAX ) ) {
 
-	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-follow-us-on-social-admin.php' );
+	require_once( plugin_dir_path( __FILE__ ) . 'admin/class-follow-us-on-social-media-admin.php' );
 	add_action( 'plugins_loaded', array( 'Follow_Us_On_Social_Media_Admin', 'get_instance' ) );
 
 }
